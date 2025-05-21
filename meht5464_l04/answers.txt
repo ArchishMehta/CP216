@@ -1,0 +1,2 @@
+ You can determine the number of bytes in the list without using a loop by 
+ subtracting the start address from the end address.
