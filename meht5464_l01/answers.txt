@@ -1,0 +1,19 @@
+-------------------------------------------------------
+answers.txt
+-------------------------------------------------------
+Author:  Archish Mehta
+ID:   169065464   
+Email:   meht5464@mylaurier.ca
+Date:    01-08-2025
+-------------------------------------------------------
+Answers for Lab 1
+-------------------------------------------------------
+
+Task 1
+1. This does not change the behaviour of the program in any way because they both represent the same value (0xE = 14).
+
+Task 2
+2. This is legal to do as you're adding a register to itself using a "add".
+
+Task 3
+3. It is not legal to do this. The proper way to do this is load one value into the register and then preform addition.

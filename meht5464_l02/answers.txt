@@ -1,0 +1,53 @@
+-------------------------------------------------------
+answers.txt
+-------------------------------------------------------
+Author:  Archish Mehta
+ID:      196065464
+Email:   meht5464@mylaurier.ca
+Date:    Jan 15, 2025
+-------------------------------------------------------
+Answers for Lab 2
+-------------------------------------------------------
+
+Task 1
+From the compiler you know the errors are on line 21 and 23, although their are logic errors way 
+before those lines that cause other errors.
+
+On line 19, ldr r3, A; is not the correct way to load a value and should be ldr r3, = A. This loads
+the address of A into r3.
+
+On line 21, the same mistake as the previous one occurs and should be ldr r3, = B.
+
+On line 23, add r2, r1, [r0] is incorrect because [r0] refers to a memory address so that addition
+isn't valid so it chould be changed to add r2,r1,r0.
+
+Task 2
+
+From the compiler we have logic errors at line 26 and 30 so decoding from the top of the code is a
+good idea.
+
+On line 26, str r2, r3 this is the incorrect way to use the store function. You need r3 to be the memory
+address to write to so it would be str r2, [r3]
+
+On line 30, the same error as the previous occurs and should be changed to str r2, [r3]
+
+On line 29, their is a typo and it should be changed to ldr r3, = Diff
+
+On line 44, .space2 is incorrect because the minimum amount of bytes you must set aside is 4 so it should
+be .space 4
+
+Task 3
+The compiler says we only have one error but since it's a logic error it's a good idea to start from the top
+
+On line 18, .text is repeated and isn't needed so remove it.
+
+On line 25 and 26, this is the incorrect way to move to the next element. #2 only move 2 bytes forward but to
+move to the next element you need to increment by 4 bytes. By incrementing it by 4, it can access each element
+in Vec1 and copy it to Vec2
+
+On line 29, the comment is misleading since it is the same as the comment on line 24. The comment should say
+//copy the contents of the third element of Vec1 to Vec2
+the code for this is the same as the one I improved on line 25 and 26
+
+On line 30 it should be add r0,r0, #4 instead of r1,r1, #4 and line 33 should store r1 and not r0 so it should be 
+str r2,[r1]
