@@ -1,0 +1,1 @@
+1. During Period High the inital counter start value would be 0x0BEB and for Period Low it would be 0xC200
